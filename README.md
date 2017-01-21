@@ -2,6 +2,8 @@
 
 Just wanted an easy way to keep track of the arenas I've been to.
 
+Live URL: [http://nhl-arenas.fictive.us/](http://nhl-arenas.fictive.us/)
+
 Uses Laravel and Angular2
 
 ## Installation
