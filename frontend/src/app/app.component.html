@@ -1,6 +1,18 @@
 <h1>
-	{{title}}
+	<img [src]="logo" alt="NHL" height="35"> {{title}}
 </h1>
+
+<div class="form-group">
+	<label class="radio-inline">
+		<input type="radio" id="show_visited_all" name="show_visited" value="all" [(ngModel)]="show_visited"> All
+	</label>
+	<label class="radio-inline">
+		<input type="radio" id="show_visited_not" name="show_visited" value="not_visited" [(ngModel)]="show_visited"> Not Visited
+	</label>
+	<label class="radio-inline">
+		<input type="radio" id="show_visited" name="show_visited" value="visited" [(ngModel)]="show_visited"> Visited
+	</label>
+</div>
 
 <sebm-google-map
 	[latitude]="lat"
@@ -28,12 +40,3 @@
 	</sebm-google-map-marker>
 
 </sebm-google-map>
-
-<div>
-	<label for="">All</label>
-	<input type="radio" name="show_visited" value="all" [(ngModel)]="show_visited"><br />
-	<label for="">Not Visited</label>
-	<input type="radio" name="show_visited" value="not_visited" [(ngModel)]="show_visited"><br />
-	<label for="">Visited</label>
-	<input type="radio" name="show_visited" value="visited" [(ngModel)]="show_visited">
-</div>
