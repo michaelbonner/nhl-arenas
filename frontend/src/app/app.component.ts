@@ -9,7 +9,7 @@ import { VisitedPipe } from './visited.pipe';
 })
 export class AppComponent {
 	title: string = 'NHL Arenas Map';
-	logo: string = 'assets/img/logos/NHL.svg';
+	logo: string = 'assets/img/logos/nhl.svg';
 	lat: number = 42.7870988;
 	lng: number = -96.4611001;
 	zoom: number = 4;
