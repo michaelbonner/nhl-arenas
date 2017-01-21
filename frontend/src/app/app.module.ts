@@ -6,10 +6,12 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import { AgmCoreModule } from 'angular2-google-maps/core';
+import { VisitedPipe } from './visited.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    VisitedPipe
   ],
   imports: [
     BrowserModule,
