@@ -30,7 +30,9 @@
 		[longitude]="arena.lng"
 		[label]="arena.label"
 		[markerDraggable]="arena.draggable"
-		(dragEnd)="markerDragEnd(m, $event)">
+		(dragEnd)="markerDragEnd(m, $event)"
+		[iconUrl]="arena.icon"
+		>
 
 		<sebm-google-map-info-window>
 			<img [src]="arena.img">
