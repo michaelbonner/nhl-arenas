@@ -19,8 +19,7 @@
 	[longitude]="lng"
 	[zoom]="zoom"
 	[disableDefaultUI]="false"
-	[zoomControl]="false"
-	(mapClick)="mapClicked($event)">
+	[zoomControl]="true">
 
 	<agm-marker
 		*ngFor="let arena of arenas | visited:show_visited; let i = index"
