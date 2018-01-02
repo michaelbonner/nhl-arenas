@@ -25,7 +25,6 @@
 	<sebm-google-map-marker
 		*ngFor="let arena of arenas | visited:show_visited; let i = index"
 		[hidden]="arena.visited"
-		(markerClick)="clickedMarker(arena.label, i)"
 		[latitude]="arena.lat"
 		[longitude]="arena.lng"
 		[label]="arena.label"
