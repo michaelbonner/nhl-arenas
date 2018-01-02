@@ -14,7 +14,7 @@
 	</label>
 </div>
 
-<sebm-google-map
+<agm-map
 	[latitude]="lat"
 	[longitude]="lng"
 	[zoom]="zoom"
@@ -22,7 +22,7 @@
 	[zoomControl]="false"
 	(mapClick)="mapClicked($event)">
 
-	<sebm-google-map-marker
+	<agm-marker
 		*ngFor="let arena of arenas | visited:show_visited; let i = index"
 		[hidden]="arena.visited"
 		[latitude]="arena.lat"
@@ -33,11 +33,11 @@
 		[iconUrl]="arena.icon"
 		>
 
-		<sebm-google-map-info-window>
+		<agm-info-window>
 			<img [src]="arena.img">
 			<strong>{{ arena.title }}</strong>
-		</sebm-google-map-info-window>
+		</agm-info-window>
 
-	</sebm-google-map-marker>
+	</agm-marker>
 
-</sebm-google-map>
+</agm-map>
